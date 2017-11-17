@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<Msg>
+		<code>0</code>
+		<description />
+		<Data>
+			<Channel>0</Channel>
+            <ServiceID>601</ServiceID>
+            <Decrypt>0</Decrypt>
+		</Data>
+		<Data>
+			<Channel>1</Channel>
+            <ServiceID>602</ServiceID>
+            <Decrypt>1</Decrypt>
+		</Data>
+		<Data>
+			<Channel>2</Channel>
+            <ServiceID>603</ServiceID>
+            <Decrypt>0</Decrypt>
+		</Data>
+	</Msg>
+	

@@ -1,0 +1,37 @@
+input, select {
+  &:disabled {
+    color: #bbbbbb;
+  }
+  font-size: @wv-small-fontsize !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select.form-control {
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("../../img/arrow.png") no-repeat scroll right center #fff;
+
+  &:disabled {
+    /*禁用时使用灰色的图标*/
+    background: url("../../img/arrow_disabled.png") no-repeat scroll right center #eee;
+  }
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+  display: none;
+}

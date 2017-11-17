@@ -1,0 +1,41 @@
+.layer-progress {
+  .layui-layer-content {
+    margin: 10px;
+    padding: 0 !important;
+    .progress {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bgColor(@bgColorS, @bgColorE) when (default()) {
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@bgColorS, endColorstr=@bgColorE);
+  	background: linear-gradient(@bgColorS, @bgColorE);
+}
+
+div.layui-layer-title{
+  font-size: 18px; 
+}
+
+.layui-layer-btn.layui-layer-btn-{
+  border-top: 1px solid #eee;
+  a{
+    border-radius: 4px;
+  }  
+}
+
+.progress{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #eeeeee;   
+  
+  .progress-bar{
+    border-color: #cacaca;    
+    .bgColor(#0b6afd, #209afe);    
+  }
+}
+
+div.layui-layer-content.layui-layer-loading2 {  
+  background: url(./loading-3.gif) no-repeat;
+}
+

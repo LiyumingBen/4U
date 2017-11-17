@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <Msg>
+    <code>0</code>
+    <description />
+    <Data>
+      <Channel>0</Channel>
+      <TSOut>
+          <Addr>235.0.1.11:2234</Addr>
+          <Switch>0</Switch>
+      </TSOut>
+      <Monitor>
+          <Addr>235.0.1.11:2234</Addr>
+          <Switch>0</Switch>
+      </Monitor>
+    </Data>
+  </Msg>
+  

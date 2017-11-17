@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<Msg>
+		<code>0</code>
+		<description />
+		<data>
+			<upgradeDelay>5</upgradeDelay>
+			<rebootDelay>5</rebootDelay>
+		</data>
+	</Msg>
+	

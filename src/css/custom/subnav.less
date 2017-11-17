@@ -1,0 +1,39 @@
+.subnav.navbar {
+  margin: 12px 30px 10px 20px;
+  height: 47px;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e0e0e0);
+  background: linear-gradient(#ffffff, #e0e0e0);
+  border: 1px solid #bfbfbf;
+  border-bottom: none;
+  min-width: 800px;
+  .navbar-header {
+    > .navbar-brand {
+      font-size: @wv-title-fontsize;
+      color: @wv-title-fontcolor;
+      font-weight: bold;
+    }
+  }
+
+  .nav.nav-tabs {
+    margin-right: 6px;
+    margin-top: 11px;
+    border-bottom: none;
+    > li {
+      > a {
+        margin-bottom: -3px;
+        border-bottom: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 10px 14px;        
+      }
+
+      &.active {
+        > a {
+          background-color: #f7f7f7;
+          border-color: #bfbfbf;
+          color: #0078fe;
+        }
+      }
+    }
+  }
+}

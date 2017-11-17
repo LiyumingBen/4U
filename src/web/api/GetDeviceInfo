@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Msg>
+    <code>0</code>
+    <description />
+    <Data>
+        <OEM>Bluetop</OEM>
+        <CardType>0</CardType>
+        <CardID>100</CardID>
+        <NICName>eth1</NICName>
+        <IP>192.168.10.66</IP>
+        <Netmask>255.255.0.0</Netmask>
+        <Gateway>192.168.10.1</Gateway>
+        <PcbVer>V1.0.0.0</PcbVer>
+        <FpgaVer>V2.1.0.5</FpgaVer>
+        <UbootVer>V1.3.5.0</UbootVer>
+        <KernelVer>V9</KernelVer>
+        <AppVer>V2.0.3</AppVer>
+        <Status>0</Status>
+        <Custom />
+    </Data>
+    <Data>
+        <OEM>Bluetop</OEM>
+        <CardType>1</CardType>
+        <CardID>100</CardID>
+        <NICName>eth1</NICName>
+        <IP>192.168.10.66</IP>
+        <Netmask>255.255.0.0</Netmask>
+        <Gateway>192.168.10.1</Gateway>
+        <PcbVer>V1.0.0.0</PcbVer>
+        <FpgaVer>V2.1.0.5</FpgaVer>
+        <UbootVer>V1.3.5.0</UbootVer>
+        <KernelVer>V9</KernelVer>
+        <AppVer>V2.0.3</AppVer>
+        <Status>0</Status>
+        <Custom />
+    </Data>
+</Msg>

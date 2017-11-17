@@ -1,0 +1,222 @@
+.react-bs-table-container {
+  position: relative;
+  margin-top: 64px;
+  .react-bs-table-tool-bar {
+    position: absolute;
+    top: -58px;
+    left: 0;
+    right: 0;
+    padding: 8px 20px;
+    height: 44px;
+    background-color: #dadada;
+    border-radius: 5px;
+    .form-control {
+      background-color: #eeeeee;
+      border-color: #cacaca;
+      height: 28px;
+      // Firefox
+      &::-moz-placeholder {
+        color: @wv-light-fontcolor;
+        opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+      }
+      &:-ms-input-placeholder {
+        color: @wv-light-fontcolor;
+      }
+      // Internet Explorer 10+
+      &::-webkit-input-placeholder {
+        color: @wv-light-fontcolor;
+      }
+      // Safari and Chrome
+    }
+
+    .input-group-addon {
+      padding: 4px 8px;
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#dcdcdc);
+      background: linear-gradient(#ffffff, #dcdcdc);
+    }
+  }
+  .react-bs-table-pagination {
+    position: absolute;
+    top: -58px;
+    left: 0;
+    right: 0;
+    padding: 0 20px 0 30px;
+    height: 44px;
+    //background-color: #dadada;
+    border-radius: 5px;
+    .pagination {
+      margin: 0;
+      margin-top: -13px;
+      float: left;
+      > li {
+        > a {
+          font-size: @wv-small-fontsize;
+          background-color: #f7f7f7;
+          color: @wv-light-fontcolor;
+          border-color: #cacaca;
+          padding: 4px 8px;
+          margin-left: 5px;
+
+          &:hover {
+            background-color: @wv-hover-color;
+            color: #fff;
+          }
+        }
+
+        &.disabled {
+          > a {
+            &:hover {
+              background-color: #cacaca;
+              color: @wv-light-fontcolor;
+            }
+          }
+        }
+
+        &.active {
+          > a {
+            background-color: @wv-hover-color;
+            color: #fff;
+          }
+
+        }
+      }
+    }
+  }
+  .react-bs-table {
+    border: 1px solid #a4a4a4;
+    border-radius: 0;
+    .react-bs-container-header {
+      table.table {
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e0e0e0);
+        background: linear-gradient(#ffffff, #e0e0e0);
+        margin-bottom: 0;
+        th {
+          border: 0 none;
+          border-right: 1px dotted #c7cbd5;
+          line-height: 26px;
+          &:last-child {
+            border-right: 0 none;
+          }
+        }
+      }
+    }
+    .react-bs-container-body {
+      table.table {
+        tr {
+          &:nth-of-type(odd) {
+            background-color: #ffffff;
+          }
+          &:nth-of-type(even) {
+            background-color: #eeeeee;
+          }
+          td {
+            border: 0 none;
+            border-right: 1px dotted #c7cbd5;
+            &:last-child {
+              border-right: 0 none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//不加搜索框和Pagination
+.react-bs-table-container.noneSearch_Pagination {
+  margin-top: 0;
+  .react-bs-table-tool-bar {
+    top: 0;
+  }
+  .react-bs-table-pagination {
+    top: 0;
+  }
+}
+
+//只有搜索框
+.react-bs-table-container.onlySearch {
+  .react-bs-table-tool-bar {
+    background-color: #dadada;
+  }
+  .react-bs-table-pagination {
+    background-color: transparent;
+  }
+}
+
+//只有Pagination
+.react-bs-table-container.onlyPagination {
+  .react-bs-table-tool-bar {
+    background-color: transparent;
+  }
+  .react-bs-table-pagination {
+    background-color: #dadada;
+  }
+}
+
+@tableFontColor:#3b3b3b;
+@bgColorStart: #ffffff;
+@bgColorEnd: #e0e0e0;
+
+table.table {
+  border-collapse:separate; 
+  border-spacing:2px 0; 
+  border: 1px solid #a4a4a4;
+  text-align: center;
+  > thead {
+
+     > tr{
+      height: 30px;
+      border: 1px solid #a4a4a4;      
+    }
+
+    th {
+      /*
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e0e0e0);
+      background: linear-gradient(#ffffff, #e0e0e0);*/
+
+      color: @tableFontColor;
+      font-size: 14px;
+      font-weight: bold;
+      background: -webkit-linear-gradient(@bgColorStart, @bgColorEnd); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(@bgColorStart, @bgColorEnd); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(@bgColorStart, @bgColorEnd); /* Firefox 3.6 - 15 */
+      background: linear-gradient(@bgColorStart, @bgColorEnd); /* 标准的语法 */
+
+      text-align: center;
+      line-height: 24px;
+    }
+  }
+  > tbody {
+    > tr {
+      color: @tableFontColor;
+      font-size: 12px;
+      
+      &:nth-of-type(odd) {
+        background-color: #ffffff;
+      }
+      &:nth-of-type(even) {
+        background-color: #eeeeee;
+      }
+      input,select{
+        font-size: 12px;
+      }
+    }
+  }
+  tr > td {
+    border: 0 none;
+    border-right: 1px dotted #c7cbd5;
+    &:last-child {
+      border-right: 0 none;
+    }
+    vertical-align: middle;
+  }
+
+  tr > th {
+    border: 0 none;
+    border-right: 1px dotted #c7cbd5;
+    vertical-align: middle;
+    &:last-child {
+      border-right: 0 none;
+    }
+  }
+}

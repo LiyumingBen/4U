@@ -1,0 +1,69 @@
+@import "common/variables";
+@import "common/button";
+@import "common/datetime";
+@import "common/form";
+@import "common/table";
+
+body {
+  min-width: 900px;
+  background-color: @wv-base-color;
+  font-size: @wv-base-fontsize;
+}
+
+:focus, a {
+  outline: 0 !important; // 这里一定要设置当前行代码得的优先级
+}
+
+input::-moz-focus-inner {
+  border-color: transparent !important; // 这里一定要设置当前行代码得的优先级
+}
+
+.bg-success {
+  background-color: #dff0d8;
+}
+
+.bg-info {
+  background-color: #d9edf7;
+}
+
+.bg-warning {
+  background-color: #fcf8e3;
+}
+
+.bg-danger {
+  background-color: #f2dede;
+}
+
+.color-success {
+  color: #3c763d;
+}
+
+.color-info {
+  color: #31708f;
+}
+
+.color-warning {
+  color: #8a6d3b;
+}
+
+.color-danger {
+  color: #a94442;
+}
+
+.els {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-tabs > li > a {   
+    border: none;    
+}
+
+.form-control{
+  padding: 2px 4px;
+  &.bg-danger{
+    border: 1px solid #f0aeae;        
+    box-shadow: inset 0px 1px 1px rgba(255, 0, 0, 0.1);
+  }
+}

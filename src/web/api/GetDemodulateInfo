@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<Msg>
+		<code>0</code>
+		<description />
+		<Data>
+			<Channel>0</Channel>
+			<Frequency>474000</Frequency>
+			<SymbolRate>6875</SymbolRate>
+			<Modulation>QAM64</Modulation>
+			<TSOut>
+                <Addr>235.0.1.11:2234</Addr>
+                <Switch>0</Switch>
+            </TSOut>
+            <Monitor>
+                <Addr>235.0.1.11:2234</Addr>
+                <Switch>0</Switch>
+            </Monitor>
+		</Data>
+		<Data>
+			<Channel>1</Channel>
+			<Frequency>474001</Frequency>
+			<SymbolRate>6876</SymbolRate>
+			<Modulation>QAM128</Modulation>
+			<TSOut>
+                <Addr>235.0.1.11:2234</Addr>
+                <Switch>0</Switch>
+            </TSOut>
+            <Monitor>
+                <Addr>235.0.1.11:2234</Addr>
+                <Switch>0</Switch>
+            </Monitor>
+		</Data>
+	</Msg>
+	
